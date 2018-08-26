@@ -187,7 +187,7 @@ public class FortuneTeller {
 		Thread.sleep(1000);
 		System.out.println("Oh, my isn't that interesting!");
 		Thread.sleep(1000);
-		System.out.println("\n\nThe Great Magisteria will now reveal your fortune! Behold!\n");
+		System.out.println("\n\nThe Great Magisteria will now reveal your fortune! \nBEHOLD!\n");
 		Thread.sleep(1500);
 		System.out.println("\n" + firstName + " " + lastName + " will retire in " + retirementYears + " years, with "
 				+ currency.format(balance) + " in the bank. My goodness!\n\n" + firstName
