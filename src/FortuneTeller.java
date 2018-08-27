@@ -14,9 +14,10 @@ public class FortuneTeller {
 		System.out.println("\nI only need some basic information about you.");
 		Thread.sleep(700);
 		System.out.println("\nWhat is your first name?"); 
+		String quitterMessage =("Nobody likes a quitter . . .");
 		String entry = input.nextLine();
 		if (entry.equalsIgnoreCase("exit")) {
-			System.out.println("Nobody likes a quitter . . .");
+			System.out.println(quitterMessage);
 			System.exit(0);
 		}
 		String firstName = entry;
@@ -26,7 +27,7 @@ public class FortuneTeller {
 		System.out.println("\nAnd what is your last name?");
 		entry = input.nextLine();
 		if (entry.equalsIgnoreCase("exit")) {
-			System.out.println("Nobody likes a quitter . . .");
+			System.out.println(quitterMessage);
 			System.exit(0);
 		}
 		String lastName = entry;
@@ -34,7 +35,7 @@ public class FortuneTeller {
 		System.out.println("\nAnd how old are you, " + firstName + " " + lastName + "?");
 		entry = input.nextLine();
 		if (entry.equalsIgnoreCase("exit")) {
-			System.out.println("Nobody likes a quitter . . .");
+			System.out.println(quitterMessage);
 			System.exit(0);
 		}
 		int age = Integer.parseInt(entry);
@@ -54,7 +55,7 @@ public class FortuneTeller {
 		System.out.println("\nNow, tell me, my dear " + firstName + ", what month were you born in? As a number, please.");
 		entry = input.nextLine();
 		if (entry.equalsIgnoreCase("exit")) {
-			System.out.println("Nobody likes a quitter . . .");
+			System.out.println(quitterMessage);
 			System.exit(0);
 		}
 		int month = Integer.parseInt(entry);
@@ -65,7 +66,7 @@ public class FortuneTeller {
 		System.out.println("Enter a ROYGBIV color, or \"help\" if you'd like to see a list of colors.");
 		entry = input.nextLine();
 		if (entry.equalsIgnoreCase("exit")) {
-			System.out.println("Nobody likes a quitter . . .");
+			System.out.println(quitterMessage);
 			System.exit(0);
 		}
 		String choice = entry;
@@ -73,7 +74,7 @@ public class FortuneTeller {
 			System.out.println("ROYGBIG stands for Red Orange Yellow Green Blue Indigo Violet\nWhich is your favorite?");
 			choice = input.nextLine();
 			if (choice.equalsIgnoreCase("exit")){
-				System.out.println("Nobody likes a quitter . . .");
+				System.out.println(quitterMessage);
 				System.exit(0);
 			}
 		}
@@ -86,7 +87,7 @@ public class FortuneTeller {
 		System.out.print("how many siblings do you have?");
 		entry = input.nextLine();
 		if (entry.equalsIgnoreCase("exit")) {
-			System.out.println("Nobody likes a quitter . . .");
+			System.out.println(quitterMessage);
 			System.exit(0);
 		}
 		int siblings = Integer.parseInt(entry);
@@ -124,10 +125,10 @@ public class FortuneTeller {
 		
 		int retirementYears;
 		if (age % 2 == 0) {
-			//retirementYears = (age - 10) / 2;
-			retirementYears = (int) (age - (Math.random()* age ) + 5);
+			
+			retirementYears = 85 - age;
 		} else {
-			retirementYears = (age - 20) / 3;
+			retirementYears = 60 - age;
 		}
 		
 		// siblings to vacation home
